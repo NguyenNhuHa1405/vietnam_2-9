@@ -27,4 +27,9 @@ document.addEventListener("DOMContentLoaded", (event) => {
         img.style.opacity = "1"
     })();
 
+    fetch("https://localhost:7216/danh-sach-gio-hang/?shipping_id=shipping_economical")
+    .then(res => res.text())
+    .then(res => {
+        console.log(res);
+    })
 });
